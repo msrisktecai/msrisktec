@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>MS RiskTec - AI-Powered Risk Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    
+    body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://img.freepik.com/premium-vector/abstract-white-light-grey-geometric-square-overlapped-pattern-background-with-shadow_453038-96.jpg?semt=ais_hybrid') no-repeat center center fixed;
+  background-size: cover;
+}
+    .gradient-bg { background: linear-gradient(120deg, #4b6cb7, #182848); }
+    .gradient-bg-secondary { background: linear-gradient(120deg, #ff9a9e, #fad0c4); }
+    .card-hover { transition: transform 0.4s ease, box-shadow 0.4s ease; }
+    .card-hover:hover { transform: translateY(-10px) scale(1.05); box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); }
+    .fade-in { opacity: 0; animation: fadeIn 1s ease-in forwards; }
+    #services {
+    background: url('https://img.freepik.com/premium-vector/abstract-white-light-grey-geometric-square-overlapped-pattern-background-with-shadow_453038-96.jpg?semt=ais_hybrid') no-repeat center center fixed;
+    background-size: cover;
+    }
+    .flip-card-back {
+    background: url('https://media.istockphoto.com/id/1396069049/vector/abstract-geometric-background-with-triangle-shape-pattern.jpg?s=612x612&w=0&k=20&c=8D-F3tXFiBumD_l236mwTeZHrqWy0HBNOrQn49LTWbY=') no-repeat center center;
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    }
+    .gradient-bg { 
+  background: url('https://news.emory.edu/features/2020/11/stopping-covid/assets/IopXcRUAje/2-01-2560x1456.jpeg') 
+  no-repeat center center fixed;
+  background-size: cover;
+}
+    @keyframes fadeIn { to { opacity: 1; } }
+  </style>
+    <style>
+      /* Google Translate Styling */
+      .goog-te-gadget-simple {
+        background: transparent !important; /* Override default white background */
+        border: 2px solid #ffffff !important; /* White border */
+        border-radius: 20px; /* Smaller pill shape */
+        padding: 2px 10px !important; /* Reduced height */
+        font-size: 20px !important; /* Smaller text */
+        height: 60px !important;
+      }
+      .goog-te-gadget-simple span[aria-hidden="true"] {
+        visibility: hidden !important;
+        width: 0 !important;
+        display: inline-block !important;
+      }
+      .goog-te-gadget-simple span[style*="border-left"] {
+        display: none !important;
+      }
+      .goog-te-gadget-simple span span {
+        color: white !important;
+      }
+      .goog-te-gadget {
+        height:36px !important;
+      }
+      #google_translate_element {
+        display: inline-block;
+      }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="gradient-bg text-white shadow-lg py-6">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <div>
+        <a href="/index.html">
+          <img src="/access/logo_white.png" alt="MS RiskTec Logo" class="h-48 w-auto">
+        </a>
+      </div>
+      <nav class="space-x-6 text-lg">
+        <a class="hover:text-gray-300 transition" href="/index.html">Home</a>
+        <!-- <a class="hover:text-gray-300 transition" href="/solutions/">Solutions</a> -->
+        <a class="hover:text-gray-300 transition" href="/ai/">AI Tools</a>
+        <a class="hover:text-gray-300 transition" href="/consultancy/">Consultancy</a>
+        <a class="hover:text-gray-300 transition" href="/training/">Training</a>
+        <a class="hover:text-gray-300 transition" href="/research/">Research</a>
+        <a class="hover:text-gray-300 transition" href="/blog/">Blog</a>
+        <a class="hover:text-gray-300 transition" href="/about/">About Us</a>
+        <a class="hover:text-gray-300 transition" href="/contact/">Contact</a>
+      </nav>
+      <div class="flex justify-end px-6 pt-4">
+        <div id="google_translate_element"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="gradient-bg text-white py-20 text-center fade-in sm:py-20 py-10">
+    <h1 class="font-extrabold text-3xl sm:text-6xl">AI-Powered Risk Solutions</h1>
+    <p class="mt-4 max-w-2xl mx-auto text-base sm:text-xl">
+      AI-Driven Risk Solutions for Future-Ready Organizations
+    </p>
+    <h2 class="font-medium mt-4 text-white opacity-90 text-sm sm:text-lg">
+      Identify, assess, and mitigate risks with our cutting-edge AI-powered risk management solutions tailored to your industry.
+    </h2>
+    <div class="mt-6 flex flex-col items-center sm:flex-row justify-center gap-3 sm:gap-6">
+      <a class="bg-transparent text-white font-semibold py-2 px-4 sm:py-4 sm:px-8 rounded-full border-2 border-white mt-3 sm:mt-6 inline-block max-w-max text-sm sm:text-lg hover:scale-105 transition-transform" href="/dashboard/">Go to Dashboard</a>
+    </div>
+  </section>
+  
+
+  <section class="py-24 bg-gray-100">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-5xl font-extrabold mb-16 text-gray-900 text-center">Our Risk Management Solutions</h2>
+      <div class="mb-16 pb-12 border-b-4 border-blue-600">
+        <h3 id="erm" class="text-4xl font-bold text-blue-800 mb-6 flex items-center">
+          <span class="mr-4"><i class="fas fa-building-shield"></i></span>
+          Enterprise Risk Management
+        </h3>
+        <p class="text-2xl text-gray-800 leading-relaxed">
+          Our Enterprise Risk Management (ERM) solution is built to help organizations take a holistic, proactive approach to risk. It aligns with global standards like COSO ERM and ISO 31000, ensuring your risk practices meet international best practices. Leveraging advanced AI-driven risk mapping and automated compliance tracking, you gain real-time visibility into risks across all business units. This empowers leadership to identify threats early, prioritize mitigation strategies, and make data-driven decisions. The result is stronger organizational resilience, improved regulatory compliance, and the confidence to achieve your strategic goals even in a rapidly changing environment.
+        </p>
+      </div>
+      <div class="mb-16 pb-12 border-b-4 border-red-600">
+        <h3 id="cyber" class="text-4xl font-bold text-red-700 mb-6 flex items-center">
+          <span class="mr-4"><i class="fas fa-shield-halved"></i></span>
+          Cybersecurity Risk Management
+        </h3>
+        <p class="text-2xl text-gray-800 leading-relaxed">
+          Protect your digital assets with our Cybersecurity Risk Management solution, which combines AI-powered threat detection with comprehensive vulnerability assessments. Real-time security monitoring and automated incident response capabilities allow you to identify, contain, and neutralize cyber threats before they escalate. The platform ensures your organization remains compliant with leading standards such as NIST, GDPR, and ISO 27001, helping you stay ahead of evolving cyber risks, maintain regulatory standing, and build lasting trust with your customers and partners.
+        </p>
+      </div>
+      <div class="mb-16 pb-12 border-b-4 border-green-600">
+        <h3 id="esg" class="text-4xl font-bold text-green-700 mb-6 flex items-center">
+          <span class="mr-4"><i class="fas fa-leaf"></i></span>
+          ESG & Sustainability Risk
+        </h3>
+        <p class="text-2xl text-gray-800 leading-relaxed">
+          Addressing environmental, social, and governance (ESG) challenges is essential for modern organizations. Our solution provides AI-based ESG risk scoring aligned with frameworks like TCFD, SASB, and GRI, enabling transparent and credible sustainability reporting. It forecasts climate and supply chain risks, monitors real-time compliance for ESG disclosures, and helps you meet stakeholder expectations and regulatory requirements. By integrating sustainability into your risk strategy, you drive long-term value and demonstrate your commitment to responsible business practices.
+        </p>
+      </div>
+      <div class="mb-16 pb-12 border-b-4 border-purple-600">
+        <h3 id="frm" class="text-4xl font-bold text-purple-700 mb-6 flex items-center">
+          <span class="mr-4"><i class="fas fa-chart-line"></i></span>
+          Financial Risk Management
+        </h3>
+        <p class="text-2xl text-gray-800 leading-relaxed">
+          Our Financial Risk Management platform integrates AI-powered fraud detection, predictive credit risk analytics, and comprehensive market risk assessment tools. You can evaluate market volatility, liquidity risks, and conduct scenario-based stress testing for better preparedness. With AI-driven portfolio optimization, financial institutions and corporates can make informed investment decisions, minimize losses, and protect profitability even during periods of economic uncertainty.
+        </p>
+      </div>
+      <div class="mb-16 pb-12 border-b-4 border-yellow-500">
+        <h3 id="orm" class="text-4xl font-bold text-yellow-600 mb-6 flex items-center">
+          <span class="mr-4"><i class="fas fa-industry"></i></span>
+          Operational Risk Management
+        </h3>
+        <p class="text-2xl text-gray-800 leading-relaxed">
+          Operational risks, such as supply chain disruptions and process failures, can have significant impacts on business continuity. Our solution features AI-based early warning systems to detect and mitigate supply chain risks, real-time tracking for manufacturing and logistics, and automation of internal risk controls. This comprehensive approach enhances operational resilience, reduces downtime, and ensures your business can adapt quickly to unforeseen events and maintain service delivery.
+        </p>
+      </div>
+      <div class="mb-8">
+        <h3 id="crrm" class="text-4xl font-bold text-indigo-700 mb-6 flex items-center">
+          <span class="mr-4"><i class="fas fa-balance-scale"></i></span>
+          Compliance & Regulatory Risk Management
+        </h3>
+        <p class="text-2xl text-gray-800 leading-relaxed">
+          Navigating the complex landscape of regulatory requirements is simplified with our Compliance & Regulatory Risk Management solution. AI-driven compliance tracking and automated audit trails help your organization stay ahead of policy changes and regulatory updates. The platform conducts thorough regulatory risk assessments aligned with global standards, providing real-time alerts and ensuring your business remains compliant, avoids penalties, and fosters a culture of accountability.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  <style>
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      perspective: 1000px;
+      min-height: 400px; 
+    }
+  
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+  
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .flip-card-front {
+      background: white;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    }
+  
+    .flip-card-back {
+      background: linear-gradient(120deg, #4b6cb7, #182848);
+      color: white;
+      transform: rotateY(180deg);
+    }
+  
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+    .margin0{
+        margin-top: 0px;
+    }
+  </style>
+  
+
+  <footer class="bg-gray-900 text-gray-400 py-8 mt-10">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
+      <div class="flex flex-row w-full justify-center items-start">
+        <div class="flex flex-col items-end pr-6 max-w-xs">
+          <p class="text-sm text-right">
+            At MS RiskTec Solutions LLP, we are a next-generation risk advisory and tech firm focused on transforming how businesses manage uncertainty. Our mission is to empower organizations with AI-powered risk intelligence, helping them predict, prevent, and manage risks smarter and faster than ever before.
+          </p>
+        </div>
+        <div class="border-l border-gray-700 h-40 mx-6"></div>
+        <div class="flex flex-col space-y-3 items-end pr-6">
+          <a href="/index.html#who" class="hover:text-white transition">Who we are</a>
+          <a href="/index.html#services" class="hover:text-white transition">Our Services</a>
+          <a href="/index.html#diff" class="hover:text-white transition">Our Differentiators</a>
+          <a href="/index.html#industries" class="hover:text-white transition">Industries We Serve</a>
+          <a href="/index.html#solutions" class="hover:text-white transition">Our AI-Powered Solutions</a>
+        </div>
+        <div class="border-l border-gray-700 h-40 mx-6"></div>
+        <div class="flex flex-col space-y-3 items-start pl-6">
+          <a href="/index.html" class="hover:text-white transition">Home</a>
+          <a href="/ai/" class="hover:text-white transition">AI Tools</a>
+          <a href="/consultancy/" class="hover:text-white transition">Consultancy</a>
+          <a href="/training/" class="hover:text-white transition">Training</a>
+          <a href="/research/" class="hover:text-white transition">Research</a>
+          <a href="/about/" class="hover:text-white transition">About Us</a>
+          <a href="/contact/" class="hover:text-white transition">Contact</a>
+        </div>
+        <div class="border-l border-gray-700 h-40 mx-6"></div>
+        <div class="flex flex-col items-start pl-6 max-w-xs">
+          <p class="mb-2 font-semibold">Let's Talk</p>
+          <p class="mb-2">+91-958234759</p>
+          <p class="mb-2">E-mail Us</p>
+          <a href="mailto:info@msrisktec.com" class="hover:text-white transition">info@msrisktec.com</a>
+        </div>
+      </div>
+      <div class="flex justify-center space-x-6 mt-8 mb-4">
+        <a href="#" class="hover:text-white transition"><i class="fab fa-twitter text-2xl"></i></a>
+        <a href="https://www.facebook.com/MSRisktec/" class="hover:text-white transition"><i class="fab fa-facebook-f text-2xl"></i></a>
+        <a href="https://www.linkedin.com/company/ms-risk-tec/" class="hover:text-white transition"><i class="fab fa-linkedin-in text-2xl"></i></a>
+        <a href="https://www.instagram.com/msrisktec/profilecard/?igsh=czM5eDR4ZWdwenpp" class="hover:text-white transition"><i class="fab fa-instagram text-2xl"></i></a>
+      </div>
+      <p class="text-sm text-center">© 2025 MS RiskTec. All rights reserved.</p>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,es,fr,de,zh-CN,ar,ru',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

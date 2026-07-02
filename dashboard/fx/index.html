@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FX Dashboard Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans flex h-screen overflow-hidden">
+
+  <!-- Sidebar -->
+  <div class="w-64 bg-gray-800 p-4 flex flex-col">
+    <div class="mb-6">
+        <img src="/access/logo_white.png" alt="MS RiskTec Logo" class="w-full h-24 object-contain"/>
+    </div>
+    <input class="w-full p-2 bg-gray-700 rounded text-gray-300 mb-4" placeholder="Search" type="text"/>
+
+    <nav>
+      <ul>
+        <li class="mb-2"><a class="flex items-center p-2 hover:bg-gray-700 rounded" href="/dashboard/"><i class="fas fa-chart-line mr-2"></i> ERM Score</a></li>
+        <li class="mb-2"><a class="flex items-center p-2 hover:bg-gray-700 rounded" href="/dashboard/calculate/"><i class="fas fa-chart-pie mr-2"></i> Calculate ERM Score</a></li>
+        <li class="mb-2"><a class="flex items-center p-2 hover:bg-gray-700 rounded" href="/dashboard/ews/"><i class="fas fa-folder-open mr-2"></i> EWS Dashboard Demo</a></li>
+        <li class="mb-2"><a class="flex items-center p-2 bg-blue-600 rounded" href="/dashboard/fx/"><i class="fas fa-dollar-sign mr-2"></i> FX Dashboard</a></li>
+        <li class="mb-2"><a class="flex items-center p-2 hover:bg-gray-700 rounded" href="/dashboard/esg/"><i class="fas fa-leaf mr-2"></i> ESG</a></li>
+        <li class="mb-2"><a class="flex items-center p-2 hover:bg-gray-700 rounded" href="/dashboard/cyber/"><i class="fas fa-shield-alt mr-2"></i> Cybersecurity</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex-1 p-6 overflow-auto">
+    <header class="mb-4">
+      <h1 class="text-2xl font-bold">FX Dashboard Demo</h1>
+    </header>
+
+    <!-- Image Row Section -->
+    <div class="grid grid-cols-1 gap-6">
+      <img src="image1.png" alt="Dashboard Insight 1" class="w-full h-auto rounded shadow-lg">
+      <img src="image2.png" alt="Dashboard Insight 2" class="w-full h-auto rounded shadow-lg">
+      <img src="image3.png" alt="Dashboard Insight 3" class="w-full h-auto rounded shadow-lg">
+    </div>
+  </div>
+
+</body>
+</html>

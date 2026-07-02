@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Sustainability Initiative | MS RiskTec</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://img.freepik.com/premium-vector/abstract-white-light-grey-geometric-square-overlapped-pattern-background-with-shadow_453038-96.jpg?semt=ais_hybrid') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .gradient-bg { background: linear-gradient(120deg, #4b6cb7, #182848); }
+    .gradient-bg-secondary { background: linear-gradient(120deg, #ff9a9e, #fad0c4); }
+    .card-hover { transition: transform 0.4s ease, box-shadow 0.4s ease; }
+    .card-hover:hover { transform: translateY(-10px) scale(1.05); box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); }
+    .fade-in { opacity: 0; animation: fadeIn 1s ease-in forwards; }
+    #services {
+      background: url('https://img.freepik.com/premium-vector/abstract-white-light-grey-geometric-square-overlapped-pattern-background-with-shadow_453038-96.jpg?semt=ais_hybrid') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .flip-card-back {
+      background: url('https://media.istockphoto.com/id/1396069049/vector/abstract-geometric-background-with-triangle-shape-pattern.jpg?s=612x612&w=0&k=20&c=8D-F3tXFiBumD_l236mwTeZHrqWy0HBNOrQn49LTWbY=') no-repeat center center;
+      background-size: cover;
+      color: white;
+      transform: rotateY(180deg);
+      border-radius: 10px;
+    }
+    .gradient-bg { 
+      background: url('https://news.emory.edu/features/2020/11/stopping-covid/assets/IopXcRUAje/2-01-2560x1456.jpeg') 
+      no-repeat center center fixed;
+      background-size: cover;
+    }
+    @keyframes fadeIn { to { opacity: 1; } }
+  </style>
+  <style>
+    .goog-te-gadget-simple {
+      background: transparent !important;
+      border: 2px solid #ffffff !important;
+      border-radius: 20px;
+      padding: 2px 10px !important;
+      font-size: 20px !important;
+      height: 60px !important;
+    }
+    .goog-te-gadget-simple span[aria-hidden="true"] {
+      visibility: hidden !important;
+      width: 0 !important;
+      display: inline-block !important;
+    }
+    .goog-te-gadget-simple span[style*="border-left"] {
+      display: none !important;
+    }
+    .goog-te-gadget-simple span span {
+      color: white !important;
+    }
+    .goog-te-gadget {
+      height:36px !important;
+    }
+    #google_translate_element {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+<header class="gradient-bg text-white shadow-lg py-6">
+  <div class="container mx-auto px-4 sm:px-6">
+    <div class="hidden md:flex justify-between items-center">
+      <div>
+        <a href="/index.html">
+          <img src="/access/logo_white.png" alt="MS RiskTec Logo" class="h-48 w-auto">
+        </a>
+      </div>
+      <nav class="space-x-6 text-base">
+        <a class="hover:text-gray-300 transition" href="/index.html">Home</a>
+        <!-- <a class="hover:text-gray-300 transition" href="/solutions/">Solutions</a> -->
+        <a class="hover:text-gray-300 transition" href="/ai/">AI Solutions</a>
+        <a class="hover:text-gray-300 transition" href="/governance/">Governance</a>
+        <a class="hover:text-gray-300 transition" href="/consultancy/">Consultancy</a>
+        <a class="hover:text-gray-300 transition" href="/training/">Training</a>
+        <a class="hover:text-gray-300 transition" href="/research/">Research</a>
+        <a class="hover:text-gray-300 transition" href="/blog/">Blog</a>
+        <a class="hover:text-gray-300 transition" href="/about/">About Us</a>
+        <a class="hover:text-gray-300 transition" href="/sustainability/">Sustainability</a>
+        <a class="hover:text-gray-300 transition" href="/contact/">Contact</a>
+      </nav>
+      <div class="flex justify-end px-6 pt-4">
+        <div id="google_translate_element"></div>
+      </div>
+    </div>
+    <div class="flex md:hidden justify-between items-center">
+      <div>
+        <a href="/index.html">
+          <img src="/access/logo_white.png" alt="MS RiskTec Logo" class="h-12 w-auto">
+        </a>
+      </div>
+      <button id="mobile-menu-button" class="text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden flex-col space-y-2 mt-3 text-base">
+      <a class="hover:text-gray-300 transition py-1 block" href="/index.html">Home</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/ai/">AI Solutions</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/consultancy/">Consultancy</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/training/">Training</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/research/">Research</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/blog/">Blog</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/about/">About Us</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/sustainability/">Sustainability</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/contact/">Contact</a>
+      <div class="pt-2">
+        <div id="google_translate_element_mobile"></div>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="gradient-bg text-white py-20 text-center fade-in sm:py-20 py-10">
+  <h1 class="font-extrabold text-3xl sm:text-6xl"> Sustainability Initiative</h1>
+  <p class="mt-4 max-w-2xl mx-auto text-base sm:text-xl">
+    Driving Risk-Smart, Climate-Resilient, and Socially Responsible Growth
+  </p>
+  <h2 class="font-medium mt-4 text-white opacity-90 text-sm sm:text-lg">
+    Empowering sustainable growth through finance, emissions reduction, resilience, and transparent impact measurement.  </h2>
+  <div class="mt-6 flex flex-col items-center sm:flex-row justify-center gap-3 sm:gap-6">
+    <a class="bg-transparent text-white font-semibold py-2 px-4 sm:py-4 sm:px-8 rounded-full border-2 border-white mt-3 sm:mt-6 inline-block max-w-max text-sm sm:text-lg hover:scale-105 transition-transform" href="/dashboard/">Go to Dashboard</a>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  btn && btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+<section class="py-20 text-gray-900">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <div class="mb-20">
+      <h3 class="text-3xl font-bold mb-10 text-gray-900 border-b-2 border-gray-200 pb-2">1. Sustainability Financing</h3>
+      <div class="bg-gray-50 rounded-xl shadow card-hover p-8 flex flex-col mb-8">
+        <h4 class="text-2xl font-semibold mb-3 text-blue-900">Overview</h4>
+        <p class="text-gray-800 mb-3">
+          We empower organizations to unlock sustainable capital through structured ESG-linked instruments such as green bonds, climate loans, and blended finance. Our AI-powered financial risk models ensure that capital allocation is resilient, well-governed, and aligned with regulatory expectations.
+        </p>
+        <h4 class="text-xl font-semibold mb-2 text-blue-900">MS Risktec Deliverables</h4>
+        <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+          <li>ESG Risk Assessment & Rating Models</li>
+          <li>Green & Climate Bond Structuring Advisory</li>
+          <li>Sustainability-Linked Investment Frameworks</li>
+          <li>Climate Fund Application Support</li>
+          <li>AI-Powered Capital Adequacy Models integrating ICAAP, stress testing, reverse stress testing, and capital allocation aligned with sustainability goals</li>
+          <li>Scenario Analysis for Sustainable Investments based on financial and ESG impact metrics</li>
+          <li>Compliance with SEBI BRSR, EU Taxonomy, TCFD, and SDG frameworks</li>
+        </ul>
+        <p class="text-gray-700 mt-2">
+          <strong>Our Differentiator:</strong> MS Risktec’s proprietary AI-driven capital planning models dynamically assess capital requirements, capital adequacy, and impact-adjusted risk exposure, allowing organizations to quantify the sustainability value of investments under different economic and environmental stress scenarios. This ensures financial resilience while enabling access to sustainability-linked capital.
+        </p>
+      </div>
+      <h3 class="text-3xl font-bold mb-10 text-gray-900 border-b-2 border-gray-200 pb-2">2. Carbon Footprint Management & CBAM Readiness</h3>
+      <div class="bg-gray-50 rounded-xl shadow card-hover p-8 flex flex-col mb-8">
+        <h4 class="text-2xl font-semibold mb-3 text-blue-900">Overview</h4>
+        <p class="text-gray-800 mb-3">
+          We assist high-emission sectors in calculating, managing, and reducing their carbon footprint while ensuring readiness for compliance with international mechanisms like the EU’s Carbon Border Adjustment Mechanism (CBAM).
+        </p>
+        <h4 class="text-xl font-semibold mb-2 text-blue-900">MS Risktec Deliverables</h4>
+        <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+          <li>Scope 1, 2, 3 Carbon Footprint Calculations</li>
+          <li>Net-Zero Transition Planning & Monitoring</li>
+          <li>Product Lifecycle Emissions Assessment</li>
+          <li>EU CBAM Data Readiness & Reporting Systems</li>
+          <li>Emission Benchmarking & Offset Strategy Development</li>
+          <li>GHG Protocol and ISO 14064-aligned Carbon Inventory Models</li>
+        </ul>
+      </div>
+      <h3 class="text-3xl font-bold mb-10 text-gray-900 border-b-2 border-gray-200 pb-2">3. Disaster Risk Financing</h3>
+      <div class="bg-gray-50 rounded-xl shadow card-hover p-8 flex flex-col mb-8">
+        <h4 class="text-2xl font-semibold mb-3 text-blue-900">Overview</h4>
+        <p class="text-gray-800 mb-3">
+          We offer financial and actuarial solutions to mitigate the fiscal and operational impact of natural disasters on enterprises and communities through innovative risk transfer mechanisms.
+        </p>
+        <h4 class="text-xl font-semibold mb-2 text-blue-900">MS Risktec Deliverables</h4>
+        <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+          <li>Catastrophic Risk Modelling (Floods, Cyclones, Earthquakes)</li>
+          <li>Parametric Insurance & Contingent Finance Instruments</li>
+          <li>Disaster Bond & Risk Pooling Strategy</li>
+          <li>Fiscal Vulnerability and Resilience Analysis</li>
+          <li>Public-Private Risk Financing Framework Design</li>
+        </ul>
+      </div>
+      <h3 class="text-3xl font-bold mb-10 text-gray-900 border-b-2 border-gray-200 pb-2">4. Social Audit & Impact Assessment</h3>
+      <div class="bg-gray-50 rounded-xl shadow card-hover p-8 flex flex-col mb-8">
+        <h4 class="text-2xl font-semibold mb-3 text-blue-900">Overview</h4>
+        <p class="text-gray-800 mb-3">
+          We ensure that organizations deliver measurable social impact through robust audit processes, stakeholder engagement, and ESG impact analytics.
+        </p>
+        <h4 class="text-xl font-semibold mb-2 text-blue-900">MS Risktec Deliverables</h4>
+        <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+          <li>Social Return on Investment (SROI) Analysis</li>
+          <li>Third-Party Social Audits and ESG Due Diligence</li>
+          <li>Community Perception & Inclusion Studies</li>
+          <li>Digital ESG Dashboards & Impact Tracking Tools</li>
+          <li>Alignment with CSR, SDG, GRI, and BRSR frameworks</li>
+        </ul>
+      </div>
+      
+      <div class="container mx-auto px-16 max-w-6xl">
+  <h3 class="text-3xl font-bold mb-10 text-gray-900 border-b-2 border-gray-200 pb-2">Why Choose MS Risktec?</h3>
+  <div class="grid md:grid-cols-2 gap-8 mb-10">
+    <div class="bg-white rounded-xl shadow-lg border border-gray-200 card-hover p-8 flex flex-col h-full">
+      <h4 class="font-semibold text-lg text-blue-900 mb-3">AI-Powered Financial & Risk Modelling</h4>
+      <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+        <li>Capital planning, ESG impact analysis, and advanced stress testing</li>
+        <li>Real-time insights for resilient, future-ready decision making</li>
+      </ul>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg border border-gray-200 card-hover p-8 flex flex-col h-full">
+      <h4 class="font-semibold text-lg text-blue-900 mb-3">Sustainable Finance & Risk Expertise</h4>
+      <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+        <li>Specialists in Sustainable Finance, CBAM, Carbon Strategy, Disaster Resilience, and ESG Audits</li>
+        <li>Comprehensive support across regulatory and market landscapes</li>
+      </ul>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg border border-gray-200 card-hover p-8 flex flex-col h-full">
+      <h4 class="font-semibold text-lg text-blue-900 mb-3">Global Framework Alignment</h4>
+      <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+        <li>Deep integration with GHG Protocol, IFRS S2, TCFD, EU CBAM, SDGs, and BRSR</li>
+        <li>Ensures compliance and global best practices</li>
+      </ul>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg border border-gray-200 card-hover p-8 flex flex-col h-full">
+      <h4 class="font-semibold text-lg text-blue-900 mb-3">Cross-Sector Experience</h4>
+      <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+        <li>Proven results across Energy, Infrastructure, BFSI, Insurance, Manufacturing, and Government</li>
+        <li>Tailored solutions for diverse industry needs</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      <!-- <div class="rounded-2xl shadow-xl bg-white p-10 md:p-16 flex flex-col items-center mb-10">
+        <h2 class="text-4xl font-bold mb-6 text-gray-900">📞 Let’s Co-create a Resilient, Low-Carbon, and Equitable Future</h2>
+        <p class="text-lg mb-4 text-gray-700">
+          Contact MS Risktec to design a forward-looking, finance-integrated sustainability roadmap.
+        </p>
+      </div> -->
+      <h3 class="text-3xl font-bold mb-10 text-gray-900 border-b-2 border-gray-200 pb-2">MS Risktec Whitepapers</h3>
+      <div class="bg-gray-50 rounded-xl shadow card-hover p-8 flex flex-col mb-8">
+        <h4 class="text-2xl font-semibold mb-3 text-blue-900">Whitepaper 1: "AI in Sustainable Finance: Transforming Capital Planning & ESG Risk Modelling"</h4>
+        <p class="text-gray-800 mb-3">
+          <strong>Executive Summary</strong><br>
+          As sustainable finance becomes a critical enabler for climate-resilient, inclusive development, capital adequacy and risk evaluation frameworks must evolve. MS Risktec leverages AI-powered models to dynamically assess ESG risks, capital requirements, and stress-test sustainable investments. This paper outlines our proprietary approach, industry applications, and real-world results across energy, infrastructure, and financial sectors.
+        </p>
+        <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+          <li>The shift from static capital models to dynamic, ESG-integrated frameworks</li>
+          <li>How AI enhances ICAAP/ICCAR through real-time data and scenario analysis</li>
+          <li>Risk-adjusted capital allocation models that incorporate sustainability-linked metrics</li>
+          <li>Sample outputs: Capital adequacy under ESG stress; investment sustainability index</li>
+          <li>Case Study: Green bond issuance supported by MS Risktec AI model (₹500 Cr)</li>
+          <li>Compliance alignment: SEBI BRSR, TCFD, EU Taxonomy, IFRS S2</li>
+        </ul>
+        <h4 class="text-xl font-semibold mb-2 text-blue-900">Our AI-Powered Capabilities</h4>
+        <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+          <li>ESG Risk Scoring linked to financial risk exposure</li>
+          <li>Reverse stress testing for green investment volatility</li>
+          <li>Predictive analytics for capital buffer adequacy</li>
+          <li>Integration of environmental KPIs into credit and investment decisions</li>
+        </ul>
+        <p class="text-gray-700 mt-2">
+          <strong>Conclusion:</strong> Traditional financial risk models are not built for a low-carbon future. MS Risktec’s AI-driven platform is future-ready—enabling sustainable finance with capital confidence and ESG integrity.
+        </p>
+        <p class="text-blue-700 mt-2">
+          Download the Whitepaper: <a href="https://msrisktec.com/whitepapers/AI_Sustainable_Finance_Risktec.pdf" class="underline" target="_blank">AI in Sustainable Finance: Transforming Capital Planning & ESG Risk Modelling</a>
+        </p>
+      </div>
+      <div class="bg-gray-50 rounded-xl shadow card-hover p-8 flex flex-col mb-8">
+        <h4 class="text-2xl font-semibold mb-3 text-blue-900">Whitepaper 2: "CBAM Readiness for Indian Exporters: A Carbon Strategy Playbook"</h4>
+        <p class="text-gray-800 mb-3">
+          <strong>Executive Summary</strong><br>
+          The EU’s Carbon Border Adjustment Mechanism (CBAM) will have deep implications for Indian exporters—especially in steel, aluminum, cement, and fertilizer. This paper outlines the strategic and operational steps businesses must take to ensure compliance, avoid carbon penalties, and build long-term competitiveness.
+        </p>
+        <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+          <li>Overview of CBAM: Scope, Timeline, and Reporting Requirements</li>
+          <li>How CBAM affects Indian exporters in Phase 1 (transitional) and Phase 2 (taxation)</li>
+          <li>MS Risktec’s CBAM Readiness Framework for product-level carbon reporting</li>
+          <li>Tools to measure Scope 1, 2, 3 emissions & prepare digital GHG inventories</li>
+          <li>Case Study: Indian steel exporter achieves 18% emissions reduction & EU filing readiness</li>
+          <li>Integration of carbon costs into pricing and trade strategy</li>
+        </ul>
+        <h4 class="text-xl font-semibold mb-2 text-blue-900">Our Services</h4>
+        <ul class="list-disc list-inside text-gray-800 mb-3 space-y-1">
+          <li>Product Carbon Footprint (PCF) & Corporate Carbon Mapping</li>
+          <li>Lifecycle emission assessments</li>
+          <li>CBAM compliance tools & quarterly filing support</li>
+          <li>Carbon offset evaluation and decarbonization roadmap</li>
+        </ul>
+        <p class="text-gray-700 mt-2">
+          <strong>Conclusion:</strong> CBAM is not just a regulatory requirement—it’s a carbon competitiveness challenge. MS Risktec is helping Indian exporters stay ahead by offering end-to-end CBAM readiness, carbon management systems, and AI-enhanced compliance solutions.
+        </p>
+        <p class="text-blue-700 mt-2">
+          Download the Whitepaper: <a href="https://msrisktec.com/whitepapers/CBAM_India_Exporters_Risktec.pdf" class="underline" target="_blank">CBAM Readiness for Indian Exporters: A Carbon Strategy Playbook</a>
+        </p>
+      </div>
+      <div class="container mx-auto px-16 max-w-6xl">
+  <h3 class="text-3xl font-bold mb-10 text-gray-900 border-b-2 border-gray-200 pb-2">Global Whitepapers & Resources</h3>
+  <table class="min-w-full bg-white border border-gray-200 rounded-xl shadow-lg text-left mb-10">
+    <thead class="bg-blue-900">
+      <tr>
+        <th class="px-6 py-4 text-white text-lg font-semibold tracking-wide">Organization</th>
+        <th class="px-6 py-4 text-white text-lg font-semibold tracking-wide">Title / Resource</th>
+        <th class="px-6 py-4 text-white text-lg font-semibold tracking-wide">Link</th>
+      </tr>
+    </thead>
+    <tbody class="text-gray-800 text-base">
+      <tr class="hover:bg-blue-50 transition">
+        <td class="px-6 py-4 border-b border-gray-100">World Bank</td>
+        <td class="px-6 py-4 border-b border-gray-100">Innovative Climate Finance</td>
+        <td class="px-6 py-4 border-b border-gray-100">
+          <span class="text-gray-500 italic">Available on World Bank website</span>
+        </td>
+      </tr>
+      <tr class="hover:bg-blue-50 transition">
+        <td class="px-6 py-4 border-b border-gray-100">UNEP FI</td>
+        <td class="px-6 py-4 border-b border-gray-100">Climate Risk Assessment Guide</td>
+        <td class="px-6 py-4 border-b border-gray-100">
+          <a href="https://www.unepfi.org/publications/investment-publications/changing-course/" class="text-blue-700 underline" target="_blank">View Guide</a>
+        </td>
+      </tr>
+      <tr class="hover:bg-blue-50 transition">
+        <td class="px-6 py-4 border-b border-gray-100">OECD</td>
+        <td class="px-6 py-4 border-b border-gray-100">Disaster Risk Financing</td>
+        <td class="px-6 py-4 border-b border-gray-100">
+          <a href="https://www.oecd.org/finance/insurance/disaster-risk-financing.htm" class="text-blue-700 underline" target="_blank">View Whitepaper</a>
+        </td>
+      </tr>
+      <tr class="hover:bg-blue-50 transition">
+        <td class="px-6 py-4">WEF</td>
+        <td class="px-6 py-4">Net-Zero Industry Tracker</td>
+        <td class="px-6 py-4">
+          <a href="https://www.weforum.org/reports/net-zero-industry-tracker-2023" class="text-blue-700 underline" target="_blank">View Report</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    </div>
+  </div>
+  
+</section>
+
+<footer class="bg-gray-900 text-gray-400 py-8 mt-10">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
+    <div class="flex flex-row w-full justify-center items-start">
+      <div class="flex flex-col items-end pr-6 max-w-xs">
+        <p class="text-sm text-right">
+            At MS RiskTec Solutions LLP, we are a next-generation risk advisory and tech firm focused on transforming how businesses manage uncertainty. Our mission is to empower organizations with AI-powered risk intelligence, helping them predict, prevent, and manage risks smarter and faster than ever before.
+          </p>
+      </div>
+      <div class="border-l border-gray-700 h-40 mx-6"></div>
+      <div class="flex flex-col space-y-3 items-end pr-6">
+        <a href="/index.html#who" class="hover:text-white transition">Who we are</a>
+        <a href="/index.html#services" class="hover:text-white transition">Our Services</a>
+        <a href="/index.html#diff" class="hover:text-white transition">Our Differentiators</a>
+        <a href="/index.html#industries" class="hover:text-white transition">Industries We Serve</a>
+        <a href="/index.html#solutions" class="hover:text-white transition">Our AI-Powered Solutions</a>
+      </div>
+      <div class="border-l border-gray-700 h-40 mx-6"></div>
+      <div class="flex flex-col space-y-3 items-start pl-6">
+        <a href="/index.html" class="hover:text-white transition">Home</a>
+        <a href="/ai/" class="hover:text-white transition">AI Solutions</a>
+        <a href="/consultancy/" class="hover:text-white transition">Consultancy</a>
+        <a href="/training/" class="hover:text-white transition">Training</a>
+        <a href="/research/" class="hover:text-white transition">Research</a>
+        <a href="/about/" class="hover:text-white transition">About Us</a>
+        <a href="/contact/" class="hover:text-white transition">Contact</a>
+      </div>
+      <div class="border-l border-gray-700 h-40 mx-6"></div>
+      <div class="flex flex-col items-start pl-6 max-w-xs">
+        <p class="mb-2 font-semibold">Let's Talk</p>
+        <p class="mb-2">+91-958234759</p>
+        <p class="mb-2">E-mail Us</p>
+        <a href="mailto:info@msrisktec.com" class="hover:text-white transition">info@msrisktec.com</a>
+      </div>
+    </div>
+    <div class="flex justify-center space-x-6 mt-8 mb-4">
+      <a href="#" class="hover:text-white transition"><i class="fab fa-twitter text-2xl"></i></a>
+      <a href="https://www.facebook.com/MSRisktec/" class="hover:text-white transition"><i class="fab fa-facebook-f text-2xl"></i></a>
+      <a href="https://www.linkedin.com/company/ms-risk-tec/" class="hover:text-white transition"><i class="fab fa-linkedin-in text-2xl"></i></a>
+      <a href="https://www.instagram.com/msrisktec/profilecard/?igsh=czM5eDR4ZWdwenpp" class="hover:text-white transition"><i class="fab fa-instagram text-2xl"></i></a>
+    </div>
+    <p class="text-sm text-center">© 2025 MS RiskTec. All rights reserved.</p>
+  </div>
+</footer>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,hi,es,fr,de,zh-CN,ar,ru',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
