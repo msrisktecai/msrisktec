@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>MS RiskTec - AI-Powered Risk Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    
+    body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://img.freepik.com/premium-vector/abstract-white-light-grey-geometric-square-overlapped-pattern-background-with-shadow_453038-96.jpg?semt=ais_hybrid') no-repeat center center fixed;
+  background-size: cover;
+}
+    .gradient-bg { background: linear-gradient(120deg, #4b6cb7, #182848); }
+    .gradient-bg-secondary { background: linear-gradient(120deg, #ff9a9e, #fad0c4); }
+    .card-hover { transition: transform 0.4s ease, box-shadow 0.4s ease; }
+    .card-hover:hover { transform: translateY(-10px) scale(1.05); box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); }
+    .fade-in { opacity: 0; animation: fadeIn 1s ease-in forwards; }
+    #services {
+    background: url('https://img.freepik.com/premium-vector/abstract-white-light-grey-geometric-square-overlapped-pattern-background-with-shadow_453038-96.jpg?semt=ais_hybrid') no-repeat center center fixed;
+    background-size: cover;
+    }
+    .flip-card-back {
+    background: url('https://media.istockphoto.com/id/1396069049/vector/abstract-geometric-background-with-triangle-shape-pattern.jpg?s=612x612&w=0&k=20&c=8D-F3tXFiBumD_l236mwTeZHrqWy0HBNOrQn49LTWbY=') no-repeat center center;
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    }
+    .gradient-bg { 
+  background: url('https://news.emory.edu/features/2020/11/stopping-covid/assets/IopXcRUAje/2-01-2560x1456.jpeg') 
+  no-repeat center center fixed;
+  background-size: cover;
+}
+    @keyframes fadeIn { to { opacity: 1; } }
+  </style>
+    <style>
+      /* Google Translate Styling */
+      .goog-te-gadget-simple {
+        background: transparent !important; /* Override default white background */
+        border: 2px solid #ffffff !important; /* White border */
+        border-radius: 20px; /* Smaller pill shape */
+        padding: 2px 10px !important; /* Reduced height */
+        font-size: 20px !important; /* Smaller text */
+        height: 60px !important;
+      }
+      .goog-te-gadget-simple span[aria-hidden="true"] {
+        visibility: hidden !important;
+        width: 0 !important;
+        display: inline-block !important;
+      }
+      .goog-te-gadget-simple span[style*="border-left"] {
+        display: none !important;
+      }
+      .goog-te-gadget-simple span span {
+        color: white !important;
+      }
+      .goog-te-gadget {
+        height:36px !important;
+      }
+      #google_translate_element {
+        display: inline-block;
+      }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+<header class="gradient-bg text-white shadow-lg py-6">
+  <div class="container mx-auto px-4 sm:px-6">
+    <div class="hidden md:flex justify-between items-center">
+      <div>
+        <a href="/index.html">
+          <img src="/access/logo_white.png" alt="MS RiskTec Logo" class="h-48 w-auto">
+        </a>
+      </div>
+      <nav class="space-x-6 text-lg">
+        <a class="hover:text-gray-300 transition" href="/index.html">Home</a>
+        <!-- <a class="hover:text-gray-300 transition" href="/solutions/">Solutions</a> -->
+        <a class="hover:text-gray-300 transition" href="/ai/">AI Solutions</a>
+        <a class="hover:text-gray-300 transition" href="/consultancy/">Consultancy</a>
+        <a class="hover:text-gray-300 transition" href="/training/">Training</a>
+        <a class="hover:text-gray-300 transition" href="/research/">Research</a>
+        <a class="hover:text-gray-300 transition" href="/blog/">Blog</a>
+        <a class="hover:text-gray-300 transition" href="/about/">About Us</a>
+        <a class="hover:text-gray-300 transition" href="/sustainability/">Sustainability</a>
+        <a class="hover:text-gray-300 transition" href="/contact/">Contact</a>
+      </nav>
+      <div class="flex justify-end px-6 pt-4">
+        <div id="google_translate_element"></div>
+      </div>
+    </div>
+    <div class="flex md:hidden justify-between items-center">
+      <div>
+        <a href="/index.html">
+          <img src="/access/logo_white.png" alt="MS RiskTec Logo" class="h-12 w-auto">
+        </a>
+      </div>
+      <button id="mobile-menu-button" class="text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden flex-col space-y-2 mt-3 text-base">
+      <a class="hover:text-gray-300 transition py-1 block" href="/index.html">Home</a>
+      <!-- <a class="hover:text-gray-300 transition py-1 block" href="/solutions/">Solutions</a> -->
+      <a class="hover:text-gray-300 transition py-1 block" href="/ai/">AI Solutions</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/consultancy/">Consultancy</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/training/">Training</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/research/">Research</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/blog/">Blog</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/about/">About Us</a>
+      <a class="hover:text-gray-300 transition py-1 block" href="/contact/">Contact</a>
+      <div class="pt-2">
+        <div id="google_translate_element_mobile"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="gradient-bg text-white py-20 text-center fade-in sm:py-20 py-10">
+  <h1 class="font-extrabold text-3xl sm:text-6xl">Blog & Insights</h1>
+  <p class="mt-4 max-w-2xl mx-auto text-base sm:text-xl">Thought Leadership</p>
+  <div class="mt-6 flex flex-col items-center sm:flex-row justify-center gap-3 sm:gap-6">
+    <a class="bg-transparent text-white font-semibold py-2 px-4 sm:py-4 sm:px-8 rounded-full border-2 border-white mt-3 sm:mt-6 inline-block max-w-max text-sm sm:text-lg hover:scale-105 transition-transform" href="/dashboard/">Go to Dashboard</a>
+  </div>
+</section>
+<script>
+  const btn = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  btn && btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+  <section class="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-5xl mx-auto">
+
+        <article class="space-y-16">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
+            <div class="p-8 md:p-12">
+              <div class="flex items-center mb-6">
+                <button class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg mr-4 font-semibold">Featured</button>
+                <h3 class="text-3xl font-bold text-gray-900">How AI is Revolutionizing Risk Management</h3>
+    </div>
+
+              <div class="prose prose-lg max-w-none">
+                <div class="bg-blue-50 rounded-xl p-6 mb-8 border-l-4 border-blue-500">
+                  <h4 class="text-xl font-semibold text-blue-900 mb-4">Introduction</h4>
+                  <p class="text-blue-800">Traditional risk management methods are struggling to keep pace with evolving business risks. AI-powered solutions are enhancing risk identification, mitigation, and forecasting like never before.</p>
+          </div>
+
+                <div class="bg-gray-50 rounded-xl p-6 mb-8">
+                  <h4 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                    <button class="bg-gray-200 text-gray-800 px-3 py-1 rounded-lg mr-2 font-medium">Key Topics</button>
+                  </h4>
+                  <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                      <span class="text-blue-500 mr-2">•</span>
+                      The limitations of traditional risk models
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-blue-500 mr-2">•</span>
+                      AI in fraud detection, cybersecurity, ESG compliance, and financial risk
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-blue-500 mr-2">•</span>
+                      Real-world AI use cases in risk management
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-blue-500 mr-2">•</span>
+                      Predictions for the future of AI-driven risk solutions
+                    </li>
+                  </ul>
+        </div>
+
+        
+                <div class="space-y-6">
+                  <p class="text-gray-700 leading-relaxed mb-8">Risk management is undergoing a transformation, with AI-driven predictive analytics, real-time monitoring, and automation enabling businesses to identify, assess, and mitigate risks proactively. AI models analyze vast datasets, detect hidden patterns, and forecast potential threats—reducing financial losses, improving regulatory compliance, and enhancing decision-making. Whether it's predicting market volatility, flagging fraud, or optimizing risk controls, AI is reshaping risk management for a smarter, faster, and more resilient future.</p>
+                <div class="bg-purple-50 rounded-xl p-6 mb-8 border-l-4 border-purple-500">
+                  <p class="text-purple-800 italic">"Want to see AI-powered risk management in action? Try our free AI Risk Assessment Tool today!"</p>
+                </div>
+                  <div class=" flex items-center space-x-2">
+                    <a href="/ai/" class="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                      Explore Our AI Risk Solutions
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
+            <div class="p-8 md:p-12">
+              <div class="flex items-center mb-6">
+                <button class="bg-green-100 text-green-800 px-4 py-2 rounded-lg mr-4 font-semibold">Security</button>
+                <h3 class="text-3xl font-bold text-gray-900">Cybersecurity in the AI Era: Predicting & Preventing Threats</h3>
+              </div>
+              <div class="prose prose-lg max-w-none">
+                <p class="text-gray-700 leading-relaxed mb-8">With cyber threats evolving rapidly, AI-powered security solutions are a game-changer. Machine learning algorithms detect anomalies in real time, identify suspicious patterns, and automate threat response, reducing the time to detect and mitigate cyberattacks. AI-driven cybersecurity adapts to new threats, offering proactive defense against phishing, ransomware, and insider threats. The Zero Trust model combined with AI ensures organizations stay ahead of cybercriminals.</p>
+                <div class="bg-indigo-50 rounded-xl p-6 mb-8 border-l-4 border-indigo-500">
+                  <p class="text-indigo-800 italic">"Is your cybersecurity strategy AI-ready? Get a comprehensive risk assessment today!"</p>
+                </div>
+                <div class="mt-4">
+                  <a href="/contact/" class="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-semibold">
+                    Get a Free Risk Assessment
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
+            <div class="p-8 md:p-12">
+              <div class="flex items-center mb-6">
+                <button class="bg-purple-100 text-purple-800 px-4 py-2 rounded-lg mr-4 font-semibold">ESG</button>
+                <h3 class="text-3xl font-bold text-gray-900">AI for ESG Risk: Meeting Compliance & Sustainability Goals</h3>
+              </div>
+              <div class="prose prose-lg max-w-none">
+                <p class="text-gray-700 leading-relaxed mb-8">As ESG (Environmental, Social, and Governance) regulations tighten, businesses must ensure compliance while maintaining sustainability commitments. AI-driven ESG risk management solutions help organizations analyze sustainability data, detect compliance risks, and automate ESG reporting. AI can assess carbon footprints, supply chain risks, ethical sourcing, and regulatory adherence, helping businesses mitigate ESG risks while improving transparency and accountability.</p>
+                <div class="bg-emerald-50 rounded-xl p-6 mb-8 border-l-4 border-emerald-500">
+                  <p class="text-emerald-800 italic">"Optimize your ESG risk strategy with AI. Our experts are ready to help!"</p>
+                </div>
+                <div class="mt-4">
+                  <a href="/contact/" class="inline-flex items-center px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-semibold">
+                    Talk to Our Experts
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
+            <div class="p-8 md:p-12">
+              <div class="flex items-center mb-6">
+                <button class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg mr-4 font-semibold">AI Security</button>
+                <h3 class="text-3xl font-bold text-gray-900">AI for Cybersecurity: Predicting & Preventing Threats</h3>
+              </div>
+              <div class="prose prose-lg max-w-none">
+                <p class="text-gray-700 leading-relaxed">With cyber threats growing in complexity, traditional security measures are no longer enough. AI-driven cybersecurity leverages machine learning, predictive analytics, and automation to detect and neutralize cyber threats before they escalate.</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 mt-8">
+                  <div class="bg-blue-50 rounded-xl p-6">
+                    <button class="bg-blue-200 text-blue-800 px-3 py-1 rounded-lg mb-2 font-medium">Feature</button>
+                    <p class="text-blue-800">Real-Time Threat Detection: AI analyzes network traffic and detects anomalies, identifying cyberattacks before they cause damage.</p>
+                  </div>
+                  <div class="bg-green-50 rounded-xl p-6">
+                    <button class="bg-green-200 text-green-800 px-3 py-1 rounded-lg mb-2 font-medium">Feature</button>
+                    <p class="text-green-800">Adaptive Defense Mechanisms: Unlike rule-based systems, AI evolves with emerging threats, adapting to new malware, ransomware, and phishing tactics.</p>
+                  </div>
+                  <div class="bg-purple-50 rounded-xl p-6">
+                    <button class="bg-purple-200 text-purple-800 px-3 py-1 rounded-lg mb-2 font-medium">Feature</button>
+                    <p class="text-purple-800">Automated Incident Response: AI-powered security systems isolate threats, contain breaches, and suggest countermeasures in real-time, reducing human intervention and response time.</p>
+                  </div>
+                  <div class="bg-yellow-50 rounded-xl p-6">
+                    <button class="bg-yellow-200 text-yellow-800 px-3 py-1 rounded-lg mb-2 font-medium">Feature</button>
+                    <p class="text-yellow-800">Behavioral Analytics: AI tracks user behavior to flag suspicious activities like unauthorized access or insider threats.</p>
+                  </div>
+        </div>
+      
+                <div class="bg-gray-50 rounded-xl p-6 mt-8 mb-8">
+                  <h5 class="text-xl font-semibold text-gray-900 mb-3 flex items-center">
+                    <button class="bg-gray-200 text-gray-800 px-3 py-1 rounded-lg mr-2 font-medium">Case Study</button>
+                    AI Preventing Data Breaches
+                  </h5>
+                  <p class="text-gray-700">A global financial firm integrated AI-powered cybersecurity tools to detect abnormal transactions. The system flagged unauthorized access attempts 75% faster than human analysts, preventing a multi-million-dollar fraud attack.</p>
+        </div>
+        
+                <div class="bg-violet-50 rounded-xl p-6 mb-8 border-l-4 border-violet-500">
+                  <p class="text-violet-800 italic">"Want to enhance your cybersecurity resilience with AI? Schedule a consultation with our experts!"</p>
+                </div>
+                <div class="mt-6">
+                  <a href="/contact/" class="inline-flex items-center px-6 py-3 bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition-colors font-semibold">
+                    Schedule a Consultation
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      perspective: 1000px;
+      min-height: 400px; 
+    }
+  
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%; 
+      text-align: center;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+  
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%; 
+      backface-visibility: hidden;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .flip-card-front {
+      background: white;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    }
+  
+    .flip-card-back {
+      background: linear-gradient(120deg, #4b6cb7, #182848);
+      color: white;
+      transform: rotateY(180deg);
+    }
+      .card-hover {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    }
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+.relative {
+  position: relative;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.border-t-4 {
+  border-top-width: 4px;
+}
+
+.border-blue-500 {
+  border-color: #3b82f6;
+}
+
+.border-green-500 {
+  border-color: #10b981;
+}
+
+.border-red-500 {
+  border-color: #ef4444;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.text-gray-700 {
+  color: #4a5568;
+}
+
+  </style>
+  
+
+  <footer class="bg-gray-900 text-gray-400 py-8 mt-10">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
+      <div class="flex flex-row w-full justify-center items-start">
+        <div class="flex flex-col items-end pr-6 max-w-xs">
+          <p class="text-sm text-right">
+            At MS RiskTec Solutions LLP, we are a next-generation risk advisory and tech firm focused on transforming how businesses manage uncertainty. Our mission is to empower organizations with AI-powered risk intelligence, helping them predict, prevent, and manage risks smarter and faster than ever before.
+          </p>
+        </div>
+        <div class="border-l border-gray-700 h-40 mx-6"></div>
+        <div class="flex flex-col space-y-3 items-end pr-6">
+          <a href="/index.html#who" class="hover:text-white transition">Who we are</a>
+          <a href="/index.html#services" class="hover:text-white transition">Our Services</a>
+          <a href="/index.html#diff" class="hover:text-white transition">Our Differentiators</a>
+          <a href="/index.html#industries" class="hover:text-white transition">Industries We Serve</a>
+          <a href="/index.html#solutions" class="hover:text-white transition">Our AI-Powered Solutions</a>
+        </div>
+        <div class="border-l border-gray-700 h-40 mx-6"></div>
+        <div class="flex flex-col space-y-3 items-start pl-6">
+          <a href="/index.html" class="hover:text-white transition">Home</a>
+          <a href="/ai/" class="hover:text-white transition">AI Solutions</a>
+          <a href="/consultancy/" class="hover:text-white transition">Consultancy</a>
+          <a href="/training/" class="hover:text-white transition">Training</a>
+          <a href="/research/" class="hover:text-white transition">Research</a>
+          <a href="/about/" class="hover:text-white transition">About Us</a>
+          <a href="/contact/" class="hover:text-white transition">Contact</a>
+        </div>
+        <div class="border-l border-gray-700 h-40 mx-6"></div>
+        <div class="flex flex-col items-start pl-6 max-w-xs">
+          <p class="mb-2 font-semibold">Let's Talk</p>
+          <p class="mb-2">+91-958234759</p>
+          <p class="mb-2">E-mail Us</p>
+          <a href="mailto:info@msrisktec.com" class="hover:text-white transition">info@msrisktec.com</a>
+        </div>
+      </div>
+      <div class="flex justify-center space-x-6 mt-8 mb-4">
+        <a href="#" class="hover:text-white transition"><i class="fab fa-twitter text-2xl"></i></a>
+        <a href="https://www.facebook.com/MSRisktec/" class="hover:text-white transition"><i class="fab fa-facebook-f text-2xl"></i></a>
+        <a href="https://www.linkedin.com/company/ms-risk-tec/" class="hover:text-white transition"><i class="fab fa-linkedin-in text-2xl"></i></a>
+        <a href="https://www.instagram.com/msrisktec/profilecard/?igsh=czM5eDR4ZWdwenpp" class="hover:text-white transition"><i class="fab fa-instagram text-2xl"></i></a>
+      </div>
+      <p class="text-sm text-center">© 2025 MS RiskTec. All rights reserved.</p>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,es,fr,de,zh-CN,ar,ru',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
+

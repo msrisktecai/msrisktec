@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>MS RiskTec - AI-Powered Risk Management</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://img.freepik.com/premium-vector/abstract-white-light-grey-geometric-square-overlapped-pattern-background-with-shadow_453038-96.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .gradient-bg {
+      background: url('https://news.emory.edu/features/2020/11/stopping-covid/assets/IopXcRUAje/2-01-2560x1456.jpeg')
+      no-repeat center center fixed;
+      background-size: cover;
+    }
+    .card-hover {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+    }
+  </style>
+
+  <!-- Google Translate Styling -->
+  <style>
+    .goog-te-gadget-simple {
+      background: transparent !important;
+      border: 2px solid #ffffff !important;
+      border-radius: 20px;
+      padding: 2px 10px !important;
+      font-size: 20px !important;
+      height: 60px !important;
+    }
+    .goog-te-gadget-simple span[aria-hidden="true"] { visibility: hidden !important; }
+    .goog-te-gadget-simple span[style*="border-left"] { display: none !important; }
+    .goog-te-gadget-simple span span { color: white !important; }
+    .goog-te-gadget { height:36px !important; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+<!-- NAVBAR -->
+<header class="gradient-bg text-white shadow-lg py-6">
+  <div class="container mx-auto px-4 sm:px-6">
+    <div class="hidden md:flex justify-between items-center">
+      <a href="/index.html">
+        <img src="/access/logo_white.png" alt="MS RiskTec Logo" class="h-48 w-auto">
+      </a>
+      <nav class="space-x-6 text-base">
+        <a href="/index.html">Home</a>
+        <a href="/ai/">AI Solutions</a>
+        <a href="/governance/">Governance</a>
+        <a href="/consultancy/">Consultancy</a>
+        <a href="/training/">Training</a>
+        <a href="/research/">Research</a>
+        <a href="/blog/">Blog</a>
+        <a href="/about/">About Us</a>
+        <a href="/sustainability/">Sustainability</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div id="google_translate_element"></div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="gradient-bg text-white py-20 text-center">
+  <h1 class="font-extrabold text-3xl sm:text-6xl">AI Solutions</h1>
+  <p class="mt-4 max-w-5xl mx-auto text-base sm:text-xl">
+    At MS Risktec, our AI Solutions empower organizations to govern, audit, and assure AI systems responsibly. We unify the international structure of ISO/IEC 42001 with the national requirements of BIS AI, enabling digital trust and regulatory readiness across all jurisdictions.
+  </p>
+  <div class="mt-6 flex flex-col items-center sm:flex-row justify-center gap-3 sm:gap-6">
+  <a
+    href="/dashboard/"
+    class="bg-transparent text-white font-semibold py-2 px-4 sm:py-4 sm:px-8
+           rounded-full border-2 border-white
+           inline-block max-w-max text-sm sm:text-lg
+           hover:scale-105 transition-transform">
+    Go to Dashboard
+  </a>
+</div>
+
+</section>
+
+<!-- AI SOLUTIONS SUITE -->
+<section class="py-20 text-center">
+  <div class="container mx-auto px-6 max-w-7xl">
+    <h2 class="text-4xl font-bold mb-12">Our AI Solutions Suite</h2>
+
+    <div class="grid md:grid-cols-2 gap-10 text-left">
+
+      <!-- CARD 1 -->
+      <div class="bg-gray-50 rounded-xl shadow card-hover p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-blue-900">
+          1. AIMS Governance Solution (ISO 42001 + BIS AI)
+        </h3>
+        <p class="text-gray-700 mb-4">
+          <strong>Unify Global & National Standards:</strong>
+          Establish a robust AI Management System (AIMS) using the internationally
+          recognized framework of ISO/IEC 42001, seamlessly integrated with the
+          national requirements of BIS AI (IS 18265).
+        </p>
+        <p class="font-semibold mb-2">Key Deliverables:</p>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>AIMS Policy Frameworks:</strong> Define ethics, accountability, oversight, and control.</li>
+          <li><strong>AI Risk Registers:</strong> Comprehensive identification and tracking aligned with NIST RMF.</li>
+          <li><strong>DPDP Compliance Modules:</strong> Adherence to DPDP 7 Sutras.</li>
+          <li><strong>Model Cards:</strong> Purpose, data lineage, and performance documentation.</li>
+        </ul>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-gray-50 rounded-xl shadow card-hover p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-blue-900">
+          2. AI Audit & Compliance Automation (BIS AI DPDP Audit App)
+        </h3>
+        <p class="text-gray-700 mb-4">
+          <strong>Powered by the BIS AI & DPDP Compliance Scoring Application:</strong>
+          Automates assessment, scoring, and assurance with real-time compliance maturity evaluation.
+        </p>
+        <p class="font-semibold mb-2">Key Assessment Areas:</p>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>DPDP Compliance (7 Sutras):</strong> DPO, consent, encryption, retention, cross-border, breach response.</li>
+          <li><strong>AI Risk Assessment (BIS):</strong> Algorithmic, Data, Operational, Ethical Risk.</li>
+          <li><strong>AI Governance Assessment:</strong> AI Charter, policies, and integrated RMS.</li>
+        </ul>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-gray-50 rounded-xl shadow card-hover p-8 md:col-span-2">
+        <h3 class="text-2xl font-semibold mb-4 text-blue-900">
+          3. AI Risk Intelligence Suite
+        </h3>
+        <p class="text-gray-700 mb-4">
+          AI-powered tools providing quantitative and real-time risk assessment,
+          feeding insights back into AIMS for proactive governance.
+        </p>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Riskie</strong> – ERM quantitative risk scoring</li>
+          <li><strong>CyberSure</strong> – AI Cyber Risk Monitor</li>
+          <li><strong>Sentra</strong> – Reputational Risk Scanner</li>
+          <li><strong>Rinnie</strong> – AI Risk Assessor</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="py-20 text-center">
+  <div class="container mx-auto px-6 max-w-5xl">
+
+    <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl">
+      <video
+        id="isoVideo"
+        class="w-full h-full object-cover"
+        poster=""
+        preload="none"
+        controls>
+        <source src="vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <button
+        id="playButton"
+        class="absolute inset-0 flex items-center justify-center
+               bg-black/40 hover:bg-black/50 transition">
+        <div class="bg-white/20 backdrop-blur-md p-5 rounded-full">
+          <i class="fa-solid fa-play text-white text-3xl"></i>
+        </div>
+      </button>
+    </div>
+
+    <p class="text-gray-600 text-sm mt-4 italic">
+      Explainer: ISO/IEC 42001 & BIS AI Unified AIMS
+    </p>
+
+  </div>
+</section>
+
+<section class="py-20 from-blue-50 to-gray-100 text-center" id="next-steps">
+  <div class="container mx-auto px-6 max-w-5xl">
+    <div class="rounded-2xl shadow-xl bg-white p-10 md:p-16 flex flex-col items-center">
+
+      <h2 class="text-4xl font-bold mb-6 text-gray-900">
+        Next Steps: Build Trustworthy AI Together
+      </h2>
+
+      <p class="text-lg mb-4 text-gray-700">
+        Ready to unify your AI governance and compliance?
+      </p>
+
+      <p class="text-lg mb-6 text-gray-700 max-w-3xl">
+        Start your Unified AIMS Journey. Talk to an expert today about how our
+        ISO 42001 and BIS AI solutions can simplify your regulatory obligations
+        and accelerate innovation safely.
+      </p>
+
+      <div class="text-lg text-gray-700 space-y-2">
+        <p><strong>Request a Demo of the BIS AI DPDP Audit App</strong></p>
+        <p class="flex items-center justify-center space-x-2">
+  <img
+    src="https://www.svgrepo.com/show/490963/phone.svg"
+    alt="Phone"
+    class="w-5 h-5"
+  />
+  <span><strong>Contact our Governance Team:</strong> +91 9582347599</span>
+</p>
+
+<p class="flex items-center justify-center space-x-2">
+  <img
+    src="https://www.svgrepo.com/show/349378/gmail.svg"
+    alt="Email"
+    class="w-5 h-5"
+  />
+  <span>
+    <strong>E:</strong>
+    <a href="mailto:info@msrisktec.com" class="text-blue-600 hover:underline">
+      info@msrisktec.com
+    </a>
+  </span>
+</p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ✅ ORIGINAL FULL FOOTER RESTORED -->
+<footer class="bg-gray-900 text-gray-400 py-8 mt-10">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
+    <div class="flex flex-row w-full justify-center items-start">
+      <div class="flex flex-col items-end pr-6 max-w-xs">
+        <p class="text-sm text-right">
+          At MS RiskTec Solutions LLP, we are a next-generation risk advisory and tech firm
+          focused on transforming how businesses manage uncertainty. Our mission is to
+          empower organizations with AI-powered risk intelligence, helping them predict,
+          prevent, and manage risks smarter and faster than ever before.
+        </p>
+      </div>
+
+      <div class="border-l border-gray-700 h-40 mx-6"></div>
+
+      <div class="flex flex-col space-y-3 items-end pr-6">
+        <a href="/index.html#who" class="hover:text-white transition">Who we are</a>
+        <a href="/index.html#services" class="hover:text-white transition">Our Services</a>
+        <a href="/index.html#diff" class="hover:text-white transition">Our Differentiators</a>
+        <a href="/index.html#industries" class="hover:text-white transition">Industries We Serve</a>
+        <a href="/index.html#solutions" class="hover:text-white transition">Our AI-Powered Solutions</a>
+      </div>
+
+      <div class="border-l border-gray-700 h-40 mx-6"></div>
+
+      <div class="flex flex-col space-y-3 items-start pl-6">
+        <a href="/index.html" class="hover:text-white transition">Home</a>
+        <a href="/ai/" class="hover:text-white transition">AI Solutions</a>
+        <a href="/consultancy/" class="hover:text-white transition">Consultancy</a>
+        <a href="/training/" class="hover:text-white transition">Training</a>
+        <a href="/research/" class="hover:text-white transition">Research</a>
+        <a href="/about/" class="hover:text-white transition">About Us</a>
+        <a href="/contact/" class="hover:text-white transition">Contact</a>
+      </div>
+
+      <div class="border-l border-gray-700 h-40 mx-6"></div>
+
+      <div class="flex flex-col items-start pl-6 max-w-xs">
+        <p class="mb-2 font-semibold">Let's Talk</p>
+        <p class="mb-2">+91-958234759</p>
+        <p class="mb-2">E-mail Us</p>
+        <a href="mailto:info@msrisktec.com" class="hover:text-white transition">
+          info@msrisktec.com
+        </a>
+      </div>
+    </div>
+
+    <div class="flex justify-center space-x-6 mt-8 mb-4">
+      <a href="#" class="hover:text-white transition"><i class="fab fa-twitter text-2xl"></i></a>
+      <a href="https://www.facebook.com/MSRisktec/" class="hover:text-white transition"><i class="fab fa-facebook-f text-2xl"></i></a>
+      <a href="https://www.linkedin.com/company/ms-risk-tec/" class="hover:text-white transition"><i class="fab fa-linkedin-in text-2xl"></i></a>
+      <a href="https://www.instagram.com/msrisktec/profilecard/?igsh=czM5eDR4ZWdwenpp" class="hover:text-white transition"><i class="fab fa-instagram text-2xl"></i></a>
+    </div>
+
+    <p class="text-sm text-center">© 2025 MS RiskTec. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- GOOGLE TRANSLATE -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,hi,es,fr,de,zh-CN,ar,ru',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script>
+  const video = document.getElementById('isoVideo');
+  const playButton = document.getElementById('playButton');
+
+  playButton.addEventListener('click', () => {
+    video.play();
+    playButton.style.display = 'none';
+  });
+
+  video.addEventListener('pause', () => {
+    playButton.style.display = 'flex';
+  });
+
+  video.addEventListener('play', () => {
+    playButton.style.display = 'none';
+  });
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
